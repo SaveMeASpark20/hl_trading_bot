@@ -1,0 +1,20 @@
+name: hyperliquid-trading
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  #conda packages
+  - python=3.10
+  - numpy
+  - pandas
+  - pip
+  - scikit-learn
+
+  # Pip-only packages
+  - pip:
+      - requests
+      - hyperliquid-python-sdk
+      - websockets
+      - eth_account
+      - python-dotenv # <-- Added because i use windows
